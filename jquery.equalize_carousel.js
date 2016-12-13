@@ -6,8 +6,6 @@ function normalizeHeights($carousel) {
         heights.push($(items[i]).height());
     }
     tallest = Math.max.apply(null, heights); //cache largest value
-    console.log($carousel);
-    console.log(tallest);
     items.css('min-height',tallest + 'px');
 }
 
